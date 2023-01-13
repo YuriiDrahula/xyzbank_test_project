@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="warn">
+    <Properties>
+        <Property name="filePath">src/test/java/com/automation/xyzbank/log4j2logs</Property>
+    </Properties>
+
+    <Appenders>
+        <File name="LOGFILE" fileName="${filePath}/logging date${date: yyyy-MM-dd} time${date: HH;mm;ss}.log">
+            <patternLayout>
+                <pattern>[%-5level] %d{yyyy-MM-dd HH:mm:ss.SSS} [%t] %c{1} - %msg%n</pattern>
+            </patternLayout>
+        </File>
+        <Console name="console" target="SYSTEM_OUT">
+            <PatternLayout pattern="[%-5level] %d{yyyy-MM-dd HH:mm:ss.SSS} [%t] %c{1} - %msg%n"/>
+        </Console>
+    </Appenders>
+    <Loggers>
+        <Logger name="com.automation">
+            <appender-ref ref="LOGFILE"/>
+        </Logger>
+        <Root level="trace">
+            <appender-ref ref="console"/>
+        </Root>
+    </Loggers>
+</Configuration>

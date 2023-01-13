@@ -1,0 +1,15 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+
+<suite name="XYZ Bank Automated Tests" verbose="1" >
+    <test name="End-to-end regression tests" >
+        <classes>
+            <class name="com.automation.xyzbank.tests.bankmanager.Story01AddCustomer"/>
+            <class name="com.automation.xyzbank.tests.bankmanager.Story02OpenAccount"/>
+            <class name="com.automation.xyzbank.tests.bankmanager.Story03FindCustomer"/>
+            <class name="com.automation.xyzbank.tests.customer.Story04LoginAsCustomer"/>
+            <class name="com.automation.xyzbank.tests.customer.Story05CustomerOperations"/>
+            <class name="com.automation.xyzbank.tests.customer.Story06TransactionsTable" />
+        </classes>
+    </test>
+
+</suite>

@@ -1,0 +1,6 @@
+com\automation\xyzbank\tests\bankmanager\Story02OpenAccount.class
+com\automation\xyzbank\tests\bankmanager\Story01AddCustomer.class
+com\automation\xyzbank\tests\customer\Story06TransactionsTable.class
+com\automation\xyzbank\tests\bankmanager\Story03FindCustomer.class
+com\automation\xyzbank\tests\customer\Story04LoginAsCustomer.class
+com\automation\xyzbank\tests\customer\Story05CustomerOperations.class
