@@ -8,8 +8,8 @@ public class Story03FindCustomer extends Manager {
     @Test(description = "Verify that new customer was created by finding him in the 'Customers' table")
     public void tc01_findCreatedCustomer() {
         bankManagerPage.clickCustomersButton();
-        customersListPage.searchInput("John");
-        customersListPage.verifyNewCustomerExistsInTable("Doe");
+        customersListPage.searchInput(firstName);
+        customersListPage.verifyNewCustomerExistsInTable(lastName);
         homePage.clickHomeButton();
         softAssert.assertAll();
     }

@@ -56,7 +56,6 @@ public class Manager {
         logger = LogManager.getLogger(getClass());
         logger.info("Logging started.");
 
-        /* Dont work with Jenkins integration (need to resolve)
         logger.info("Loading global variables.");
         Properties properties = new Properties();
         FileInputStream fileInputStream = new FileInputStream(pathToGlobalVariablesRemote);
@@ -71,7 +70,7 @@ public class Manager {
         withdrawAmount = properties.getProperty("withdrawAmount");
         nullBalance = properties.getProperty("nullBalance");
         logger.info("Global variables loaded.");
-        */
+
 
         logger.info("Initializing Web Driver.");
         WebDriverManager.chromedriver().setup();

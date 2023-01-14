@@ -8,8 +8,8 @@ public class Story04LoginAsCustomer extends Manager {
     @Test(description = "Login as customer with the created customer credentials")
     public void tc01_loginAsCustomer(){
         homePage.clickCustomerLoginButton();
-        customerLoginPage.selectUserToLogin("John Doe");
+        customerLoginPage.selectUserToLogin(fullName);
         customerLoginPage.clickLoginButton();
-        customerMainPage.verifyCorrectCustomerLoggedIn("John Doe");
+        customerMainPage.verifyCorrectCustomerLoggedIn(fullName);
     }
 }

@@ -7,15 +7,15 @@ public class Story05CustomerOperations extends Manager {
 
     @Test(description = "Deposit money to the customers bank account")
     public void tc01_depositMoney(){
-        customerMainPage.depositMoney("1000");
+        customerMainPage.depositMoney(depositAmount);
         customerMainPage.verifyDepositSuccessfullyMessageIsShown();
-        customerMainPage.verifyCorrectBalanceAmount("1000");
+        customerMainPage.verifyCorrectBalanceAmount(depositAmount);
     }
 
     @Test(description = "Withdraw money from the customers bank account")
     public void tc02_withdrawMoney(){
-        customerMainPage.withdrawMoney("500");
+        customerMainPage.withdrawMoney(withdrawAmount);
         customerMainPage.verifyTransactionSuccessfulMessageIsShown();
-        customerMainPage.verifyCorrectBalanceAmount("500");
+        customerMainPage.verifyCorrectBalanceAmount(withdrawAmount);
     }
 }

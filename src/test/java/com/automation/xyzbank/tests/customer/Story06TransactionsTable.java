@@ -10,15 +10,15 @@ public class Story06TransactionsTable extends Manager {
     @Test(description = "Verify that the transaction from the previous tests exists in the 'Transactions' table")
     public void tc01_verifyDepositTransaction(){
         customerMainPage.clickTransactionsButton();
-        transactionsPage.verifyTransactionAmount("1000");
-        transactionsPage.verifyTransactionType("Credit");
+        transactionsPage.verifyTransactionAmount(depositAmount);
+        transactionsPage.verifyTransactionType(depositType);
     }
 
     @Test(description = "Verify that after clicking the 'Reset' button the balance = 0")
     public void tc02_resetBalance(){
         transactionsPage.clickResetButton();
         transactionsPage.clickBackButton();
-        customerMainPage.verifyCorrectBalanceAmount("0");
+        customerMainPage.verifyCorrectBalanceAmount(nullBalance);
     }
 
 }
