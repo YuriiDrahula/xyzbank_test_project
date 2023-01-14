@@ -26,7 +26,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -40,7 +40,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-XYZ_Bank_Automated_Tests" class="navigator-link">
-              <span class="suite-name border-passed">XYZ Bank Automated Tests</span>
+              <span class="suite-name border-failed">XYZ Bank Automated Tests</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -93,7 +93,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">8 methods,   8 passed</span>
+                    <span class="method-stats">8 methods, 1 failed,   7 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-XYZ_Bank_Automated_Tests" class="hide-methods failed suite-XYZ_Bank_Automated_Tests"> (hide)</a> <!-- hide-methods failed suite-XYZ_Bank_Automated_Tests -->
+                      <a href="#" panel-name="suite-XYZ_Bank_Automated_Tests" class="show-methods failed suite-XYZ_Bank_Automated_Tests"> (show)</a> <!-- show-methods failed suite-XYZ_Bank_Automated_Tests -->
+                    </span>
+                    <div class="method-list-content failed suite-XYZ_Bank_Automated_Tests">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-XYZ_Bank_Automated_Tests" title="com.automation.xyzbank.tests.customer.Story06TransactionsTable" class="method navigator-link" hash-for-method="tc01_verifyDepositTransaction">tc01_verifyDepositTransaction</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-XYZ_Bank_Automated_Tests -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -129,11 +143,6 @@
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-XYZ_Bank_Automated_Tests" title="com.automation.xyzbank.tests.customer.Story06TransactionsTable" class="method navigator-link" hash-for-method="tc01_verifyDepositTransaction">tc01_verifyDepositTransaction</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-XYZ_Bank_Automated_Tests" title="com.automation.xyzbank.tests.customer.Story06TransactionsTable" class="method navigator-link" hash-for-method="tc02_resetBalance">tc02_resetBalance</a> <!-- method navigator-link -->
                       </span>
                       <br/>
@@ -154,23 +163,61 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-XYZ_Bank_Automated_Tests" class="panel XYZ_Bank_Automated_Tests">
-          <div class="suite-XYZ_Bank_Automated_Tests-class-passed">
+          <div class="suite-XYZ_Bank_Automated_Tests-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">com.automation.xyzbank.tests.customer.Story04LoginAsCustomer</span>
+              <img src="failed.png"/>
+              <span class="class-name">com.automation.xyzbank.tests.customer.Story06TransactionsTable</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="tc01_loginAsCustomer">
-                  </a> <!-- tc01_loginAsCustomer -->
-                  <span class="method-name">tc01_loginAsCustomer</span>
+                  <a name="tc01_verifyDepositTransaction">
+                  </a> <!-- tc01_verifyDepositTransaction -->
+                  <span class="method-name">tc01_verifyDepositTransaction</span>
+                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator &apos;By.cssSelector: tr[id=&apos;anchor0&apos;] :nth-child(2)&apos; (tried for 10 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:87)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
+	at com.automation.framework.xyzbank.tools.AdjustedInteractions.wait(AdjustedInteractions.java:72)
+	at com.automation.framework.xyzbank.customerpages.mainpage.transactionspage.TransactionsPage.verifyTransactionAmount(TransactionsPage.java:40)
+	at com.automation.xyzbank.tests.customer.Story06TransactionsTable.tc01_verifyDepositTransaction(Story06TransactionsTable.java:13)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;tr[id=&apos;anchor0&apos;] :nth-child(2)&quot;}
+  (Session info: chrome=108.0.5359.125)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.6.0&apos;, revision: &apos;79f1c02ae20&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.16.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [f15e43a3a3a608fbd853f4c9ff7c180f, findElement {using=css selector, value=tr[id=&apos;anchor0&apos;] :nth-child(2)}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.125, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\Users\YURII~1.DRA\AppDat...}, goog:chromeOptions: {debuggerAddress: localhost:54755}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:54755/devtoo..., se:cdpVersion: 108.0.5359.125, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: f15e43a3a3a608fbd853f4c9ff7c180f
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:541)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:365)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:357)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at com.sun.proxy.$Proxy30.isDisplayed(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:307)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:40)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:293)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:208)
+	... 34 more
+... Removed 33 stack frames
+</div> <!-- stack-trace -->
                   <em>
-(Login as customer with the created customer credentials)                  </em>
+(Verify that the transaction from the previous tests exists in the 'Transactions' table)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-XYZ_Bank_Automated_Tests-class-passed -->
+          </div> <!-- suite-XYZ_Bank_Automated_Tests-class-failed -->
           <div class="suite-XYZ_Bank_Automated_Tests-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -191,18 +238,26 @@
           <div class="suite-XYZ_Bank_Automated_Tests-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">com.automation.xyzbank.tests.customer.Story06TransactionsTable</span>
+              <span class="class-name">com.automation.xyzbank.tests.customer.Story04LoginAsCustomer</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="tc01_verifyDepositTransaction">
-                  </a> <!-- tc01_verifyDepositTransaction -->
-                  <span class="method-name">tc01_verifyDepositTransaction</span>
+                  <a name="tc01_loginAsCustomer">
+                  </a> <!-- tc01_loginAsCustomer -->
+                  <span class="method-name">tc01_loginAsCustomer</span>
                   <em>
-(Verify that the transaction from the previous tests exists in the 'Transactions' table)                  </em>
+(Login as customer with the created customer credentials)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-XYZ_Bank_Automated_Tests-class-passed -->
+          <div class="suite-XYZ_Bank_Automated_Tests-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.automation.xyzbank.tests.customer.Story06TransactionsTable</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
                   <a name="tc02_resetBalance">
@@ -333,42 +388,42 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(8);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'tc01_addCustomerOne')
-data.setCell(0, 2, 'com.automation.xyzbank.tests.bankmanager.Story01AddCustomer')
-data.setCell(0, 3, 3110);
+data.setCell(0, 1, 'tc01_verifyDepositTransaction')
+data.setCell(0, 2, 'com.automation.xyzbank.tests.customer.Story06TransactionsTable')
+data.setCell(0, 3, 10230);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'tc01_loginAsCustomer')
-data.setCell(1, 2, 'com.automation.xyzbank.tests.customer.Story04LoginAsCustomer')
-data.setCell(1, 3, 1769);
+data.setCell(1, 1, 'tc01_openBankAccount')
+data.setCell(1, 2, 'com.automation.xyzbank.tests.bankmanager.Story02OpenAccount')
+data.setCell(1, 3, 3535);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'tc01_openBankAccount')
-data.setCell(2, 2, 'com.automation.xyzbank.tests.bankmanager.Story02OpenAccount')
-data.setCell(2, 3, 1700);
+data.setCell(2, 1, 'tc01_addCustomerOne')
+data.setCell(2, 2, 'com.automation.xyzbank.tests.bankmanager.Story01AddCustomer')
+data.setCell(2, 3, 3526);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'tc01_findCreatedCustomer')
-data.setCell(3, 2, 'com.automation.xyzbank.tests.bankmanager.Story03FindCustomer')
-data.setCell(3, 3, 1159);
+data.setCell(3, 1, 'tc01_loginAsCustomer')
+data.setCell(3, 2, 'com.automation.xyzbank.tests.customer.Story04LoginAsCustomer')
+data.setCell(3, 3, 2851);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'tc02_withdrawMoney')
+data.setCell(4, 1, 'tc01_depositMoney')
 data.setCell(4, 2, 'com.automation.xyzbank.tests.customer.Story05CustomerOperations')
-data.setCell(4, 3, 1048);
+data.setCell(4, 3, 2003);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'tc01_depositMoney')
-data.setCell(5, 2, 'com.automation.xyzbank.tests.customer.Story05CustomerOperations')
-data.setCell(5, 3, 974);
+data.setCell(5, 1, 'tc01_findCreatedCustomer')
+data.setCell(5, 2, 'com.automation.xyzbank.tests.bankmanager.Story03FindCustomer')
+data.setCell(5, 3, 1472);
 data.setCell(6, 0, 6)
-data.setCell(6, 1, 'tc01_verifyDepositTransaction')
-data.setCell(6, 2, 'com.automation.xyzbank.tests.customer.Story06TransactionsTable')
-data.setCell(6, 3, 740);
+data.setCell(6, 1, 'tc02_withdrawMoney')
+data.setCell(6, 2, 'com.automation.xyzbank.tests.customer.Story05CustomerOperations')
+data.setCell(6, 3, 1276);
 data.setCell(7, 0, 7)
 data.setCell(7, 1, 'tc02_resetBalance')
 data.setCell(7, 2, 'com.automation.xyzbank.tests.customer.Story06TransactionsTable')
-data.setCell(7, 3, 254);
+data.setCell(7, 3, 439);
 window.suiteTableData['XYZ_Bank_Automated_Tests']= { tableData: data, tableDiv: 'times-div-XYZ_Bank_Automated_Tests'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 10 seconds</span>
+              <span class="suite-total-time">Total running time: 25 seconds</span>
               <div id="times-div-XYZ_Bank_Automated_Tests">
               </div> <!-- times-div-XYZ_Bank_Automated_Tests -->
             </div> <!-- times-div -->
@@ -446,57 +501,59 @@ return data;
               </div> <!-- configuration-suite before -->
               <div class="test-method">
                 <span class="method-name">tc01_addCustomerOne</span>
-                <span class="method-start">9731 ms</span>
+                <span class="method-start">19838 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.automation.xyzbank.tests.bankmanager.Story02OpenAccount</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">tc01_openBankAccount</span>
-                <span class="method-start">13269 ms</span>
+                <span class="method-start">24127 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.automation.xyzbank.tests.bankmanager.Story03FindCustomer</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">tc01_findCreatedCustomer</span>
-                <span class="method-start">15026 ms</span>
+                <span class="method-start">27810 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.automation.xyzbank.tests.customer.Story04LoginAsCustomer</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">tc01_loginAsCustomer</span>
-                <span class="method-start">16188 ms</span>
+                <span class="method-start">29285 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.automation.xyzbank.tests.customer.Story05CustomerOperations</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">tc01_depositMoney</span>
-                <span class="method-start">17960 ms</span>
+                <span class="method-start">32160 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">tc02_withdrawMoney</span>
-                <span class="method-start">18936 ms</span>
+                <span class="method-start">34166 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.automation.xyzbank.tests.customer.Story06TransactionsTable</div> <!-- chronological-class-name -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">tc01_verifyDepositTransaction</span>
-                <span class="method-start">19986 ms</span>
+                <span class="method-start">35446 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">tc02_resetBalance</span>
-                <span class="method-start">20728 ms</span>
+                <span class="method-start">45733 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.automation.xyzbank.tests.bankmanager.Story01AddCustomer</div> <!-- chronological-class-name -->
               <div class="configuration-suite after">
                 <span class="method-name">terminateDriver</span>
-                <span class="method-start">21044 ms</span>
+                <span class="method-start">46346 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

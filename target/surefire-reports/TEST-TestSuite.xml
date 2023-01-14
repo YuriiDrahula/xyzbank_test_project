@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="TestSuite" time="23.551" tests="8" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="TestSuite" time="57.752" tests="8" errors="0" skipped="0" failures="1">
   <properties>
     <property name="sun.desktop" value="windows"/>
     <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
@@ -64,12 +64,32 @@
     <property name="library.jansi.path" value="C:\apache-maven-3.8.6\lib\jansi-native"/>
     <property name="java.class.version" value="55.0"/>
   </properties>
-  <testcase name="tc01_addCustomerOne" classname="com.automation.xyzbank.tests.bankmanager.Story01AddCustomer" time="3.458"/>
-  <testcase name="tc01_openBankAccount" classname="com.automation.xyzbank.tests.bankmanager.Story02OpenAccount" time="1.752"/>
-  <testcase name="tc01_findCreatedCustomer" classname="com.automation.xyzbank.tests.bankmanager.Story03FindCustomer" time="1.156"/>
-  <testcase name="tc01_loginAsCustomer" classname="com.automation.xyzbank.tests.customer.Story04LoginAsCustomer" time="1.769"/>
-  <testcase name="tc01_depositMoney" classname="com.automation.xyzbank.tests.customer.Story05CustomerOperations" time="0.974"/>
-  <testcase name="tc02_withdrawMoney" classname="com.automation.xyzbank.tests.customer.Story05CustomerOperations" time="1.048"/>
-  <testcase name="tc01_verifyDepositTransaction" classname="com.automation.xyzbank.tests.customer.Story06TransactionsTable" time="0.739"/>
-  <testcase name="tc02_resetBalance" classname="com.automation.xyzbank.tests.customer.Story06TransactionsTable" time="0.253"/>
+  <testcase name="tc01_addCustomerOne" classname="com.automation.xyzbank.tests.bankmanager.Story01AddCustomer" time="4.136"/>
+  <testcase name="tc01_openBankAccount" classname="com.automation.xyzbank.tests.bankmanager.Story02OpenAccount" time="3.492"/>
+  <testcase name="tc01_findCreatedCustomer" classname="com.automation.xyzbank.tests.bankmanager.Story03FindCustomer" time="1.477"/>
+  <testcase name="tc01_loginAsCustomer" classname="com.automation.xyzbank.tests.customer.Story04LoginAsCustomer" time="2.867"/>
+  <testcase name="tc01_depositMoney" classname="com.automation.xyzbank.tests.customer.Story05CustomerOperations" time="1.999"/>
+  <testcase name="tc02_withdrawMoney" classname="com.automation.xyzbank.tests.customer.Story05CustomerOperations" time="1.276"/>
+  <testcase name="tc01_verifyDepositTransaction" classname="com.automation.xyzbank.tests.customer.Story06TransactionsTable" time="10.307">
+    <failure message="Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator &apos;By.cssSelector: tr[id=&apos;anchor0&apos;] :nth-child(2)&apos; (tried for 10 second(s) with 500 milliseconds interval)" type="org.openqa.selenium.TimeoutException">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.cssSelector: tr[id='anchor0'] :nth-child(2)' (tried for 10 second(s) with 500 milliseconds interval)
+	at com.automation.xyzbank.tests.customer.Story06TransactionsTable.tc01_verifyDepositTransaction(Story06TransactionsTable.java:13)
+Caused by: org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"css selector","selector":"tr[id='anchor0'] :nth-child(2)"}
+  (Session info: chrome=108.0.5359.125)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.6.0', revision: '79f1c02ae20'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.16.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [f15e43a3a3a608fbd853f4c9ff7c180f, findElement {using=css selector, value=tr[id='anchor0'] :nth-child(2)}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.125, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\Users\YURII~1.DRA\AppDat...}, goog:chromeOptions: {debuggerAddress: localhost:54755}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:54755/devtoo..., se:cdpVersion: 108.0.5359.125, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: f15e43a3a3a608fbd853f4c9ff7c180f
+	at com.automation.xyzbank.tests.customer.Story06TransactionsTable.tc01_verifyDepositTransaction(Story06TransactionsTable.java:13)
+</failure>
+    <system-out><![CDATA[[DEBUG] 2023-01-14 15:39:17.536 [main] CustomerMainPage - Entered clickTransactionsButton method.
+[DEBUG] 2023-01-14 15:39:17.683 [main] CustomerMainPage - Clicked the 'Transactions' button.
+[DEBUG] 2023-01-14 15:39:17.684 [main] TransactionsPage - Entered verifyTransactionAmount method.
+This test case has been failed!
+]]></system-out>
+  </testcase>
+  <testcase name="tc02_resetBalance" classname="com.automation.xyzbank.tests.customer.Story06TransactionsTable" time="0.415"/>
 </testsuite>

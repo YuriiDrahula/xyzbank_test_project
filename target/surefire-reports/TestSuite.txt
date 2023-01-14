@@ -1,4 +1,19 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 23.551 s - in TestSuite
+Tests run: 8, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 57.752 s <<< FAILURE! - in TestSuite
+tc01_verifyDepositTransaction(com.automation.xyzbank.tests.customer.Story06TransactionsTable)  Time elapsed: 10.307 s  <<< FAILURE!
+org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.cssSelector: tr[id='anchor0'] :nth-child(2)' (tried for 10 second(s) with 500 milliseconds interval)
+	at com.automation.xyzbank.tests.customer.Story06TransactionsTable.tc01_verifyDepositTransaction(Story06TransactionsTable.java:13)
+Caused by: org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"css selector","selector":"tr[id='anchor0'] :nth-child(2)"}
+  (Session info: chrome=108.0.5359.125)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.6.0', revision: '79f1c02ae20'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.16.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [f15e43a3a3a608fbd853f4c9ff7c180f, findElement {using=css selector, value=tr[id='anchor0'] :nth-child(2)}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.125, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\Users\YURII~1.DRA\AppDat...}, goog:chromeOptions: {debuggerAddress: localhost:54755}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:54755/devtoo..., se:cdpVersion: 108.0.5359.125, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: f15e43a3a3a608fbd853f4c9ff7c180f
+	at com.automation.xyzbank.tests.customer.Story06TransactionsTable.tc01_verifyDepositTransaction(Story06TransactionsTable.java:13)
+

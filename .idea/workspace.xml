@@ -186,6 +186,11 @@
     &quot;settings.editor.selected.configurable&quot;: &quot;preferences.sourceCode.Java&quot;
   }
 }</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\yurii.drahula\IdeaProjects\xyzbank_test_project\target" />
+    </key>
+  </component>
   <component name="RunManager" selected="TestNG.C:/Users/yurii.drahula/IdeaProjects/xyzbank_test_project/src/test/java/com/automation/xyzbank/tests/regressiontest/testng.xml">
     <configuration name="C:/Users/yurii.drahula/IdeaProjects/xyzbank_test_project/src/test/java/com/automation/xyzbank/tests/regressiontest/testng.xml" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="xyzbank_test_project" />
