@@ -1,0 +1,119 @@
+<html>
+<head>
+<title>TestNG:  End-to-end regression tests</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>End-to-end regression tests</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>8/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Sat Jan 14 14:29:59 EET 2023</td>
+</tr>
+<tr><td>Total time:</td><td>11 seconds (11352 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.automation.xyzbank.tests.customer.Story06TransactionsTable.tc01_verifyDepositTransaction()'><b>tc01_verifyDepositTransaction</b><br>Test class: com.automation.xyzbank.tests.customer.Story06TransactionsTable<br>Test method: Verify that the transaction from the previous tests exists in the 'Transactions' table</td>
+<td></td>
+<td>0</td>
+<td>com.automation.xyzbank.tests.customer.Story06TransactionsTable@1949309d</td></tr>
+<tr>
+<td title='com.automation.xyzbank.tests.bankmanager.Story02OpenAccount.tc01_openBankAccount()'><b>tc01_openBankAccount</b><br>Test class: com.automation.xyzbank.tests.bankmanager.Story02OpenAccount<br>Test method: Open the bank account in dollar for the created customer</td>
+<td></td>
+<td>1</td>
+<td>com.automation.xyzbank.tests.bankmanager.Story02OpenAccount@1b005a0b</td></tr>
+<tr>
+<td title='com.automation.xyzbank.tests.bankmanager.Story03FindCustomer.tc01_findCreatedCustomer()'><b>tc01_findCreatedCustomer</b><br>Test class: com.automation.xyzbank.tests.bankmanager.Story03FindCustomer<br>Test method: Verify that new customer was created by finding him in the 'Customers' table</td>
+<td></td>
+<td>1</td>
+<td>com.automation.xyzbank.tests.bankmanager.Story03FindCustomer@141e879d</td></tr>
+<tr>
+<td title='com.automation.xyzbank.tests.customer.Story06TransactionsTable.tc02_resetBalance()'><b>tc02_resetBalance</b><br>Test class: com.automation.xyzbank.tests.customer.Story06TransactionsTable<br>Test method: Verify that after clicking the 'Reset' button the balance = 0</td>
+<td></td>
+<td>0</td>
+<td>com.automation.xyzbank.tests.customer.Story06TransactionsTable@1949309d</td></tr>
+<tr>
+<td title='com.automation.xyzbank.tests.bankmanager.Story01AddCustomer.tc01_addCustomerOne()'><b>tc01_addCustomerOne</b><br>Test class: com.automation.xyzbank.tests.bankmanager.Story01AddCustomer<br>Test method: Add the customer by the bank manager</td>
+<td></td>
+<td>3</td>
+<td>com.automation.xyzbank.tests.bankmanager.Story01AddCustomer@cb0f763</td></tr>
+<tr>
+<td title='com.automation.xyzbank.tests.customer.Story05CustomerOperations.tc01_depositMoney()'><b>tc01_depositMoney</b><br>Test class: com.automation.xyzbank.tests.customer.Story05CustomerOperations<br>Test method: Deposit money to the customers bank account</td>
+<td></td>
+<td>0</td>
+<td>com.automation.xyzbank.tests.customer.Story05CustomerOperations@1704f67f</td></tr>
+<tr>
+<td title='com.automation.xyzbank.tests.customer.Story04LoginAsCustomer.tc01_loginAsCustomer()'><b>tc01_loginAsCustomer</b><br>Test class: com.automation.xyzbank.tests.customer.Story04LoginAsCustomer<br>Test method: Login as customer with the created customer credentials</td>
+<td></td>
+<td>1</td>
+<td>com.automation.xyzbank.tests.customer.Story04LoginAsCustomer@109d724c</td></tr>
+<tr>
+<td title='com.automation.xyzbank.tests.customer.Story05CustomerOperations.tc02_withdrawMoney()'><b>tc02_withdrawMoney</b><br>Test class: com.automation.xyzbank.tests.customer.Story05CustomerOperations<br>Test method: Withdraw money from the customers bank account</td>
+<td></td>
+<td>1</td>
+<td>com.automation.xyzbank.tests.customer.Story05CustomerOperations@1704f67f</td></tr>
+</table><p>
+</body>
+</html>

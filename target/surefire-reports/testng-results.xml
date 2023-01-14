@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="10" total="18" passed="8" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-01-14T14:29:59 EET" name="XYZ Bank Automated Tests" finished-at="2023-01-14T14:30:10 EET" duration-ms="11352">
+    <groups>
+    </groups>
+    <test started-at="2023-01-14T14:29:59 EET" name="End-to-end regression tests" finished-at="2023-01-14T14:30:10 EET" duration-ms="11352">
+      <class name="com.automation.xyzbank.tests.bankmanager.Story03FindCustomer">
+        <test-method signature="tc01_findCreatedCustomer()[pri:0, instance:com.automation.xyzbank.tests.bankmanager.Story03FindCustomer@141e879d]" started-at="2023-01-14T14:30:05 EET" name="tc01_findCreatedCustomer" description="Verify that new customer was created by finding him in the &#039;Customers&#039; table" finished-at="2023-01-14T14:30:06 EET" duration-ms="1159" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc01_findCreatedCustomer -->
+      </class> <!-- com.automation.xyzbank.tests.bankmanager.Story03FindCustomer -->
+      <class name="com.automation.xyzbank.tests.customer.Story06TransactionsTable">
+        <test-method signature="tc01_verifyDepositTransaction()[pri:0, instance:com.automation.xyzbank.tests.customer.Story06TransactionsTable@1949309d]" started-at="2023-01-14T14:30:09 EET" name="tc01_verifyDepositTransaction" description="Verify that the transaction from the previous tests exists in the &#039;Transactions&#039; table" finished-at="2023-01-14T14:30:10 EET" duration-ms="740" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc01_verifyDepositTransaction -->
+        <test-method signature="tc02_resetBalance()[pri:0, instance:com.automation.xyzbank.tests.customer.Story06TransactionsTable@1949309d]" started-at="2023-01-14T14:30:10 EET" name="tc02_resetBalance" description="Verify that after clicking the &#039;Reset&#039; button the balance = 0" finished-at="2023-01-14T14:30:10 EET" duration-ms="254" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc02_resetBalance -->
+      </class> <!-- com.automation.xyzbank.tests.customer.Story06TransactionsTable -->
+      <class name="com.automation.xyzbank.tests.customer.Story04LoginAsCustomer">
+        <test-method signature="tc01_loginAsCustomer()[pri:0, instance:com.automation.xyzbank.tests.customer.Story04LoginAsCustomer@109d724c]" started-at="2023-01-14T14:30:06 EET" name="tc01_loginAsCustomer" description="Login as customer with the created customer credentials" finished-at="2023-01-14T14:30:07 EET" duration-ms="1769" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc01_loginAsCustomer -->
+      </class> <!-- com.automation.xyzbank.tests.customer.Story04LoginAsCustomer -->
+      <class name="com.automation.xyzbank.tests.customer.Story05CustomerOperations">
+        <test-method signature="tc01_depositMoney()[pri:0, instance:com.automation.xyzbank.tests.customer.Story05CustomerOperations@1704f67f]" started-at="2023-01-14T14:30:07 EET" name="tc01_depositMoney" description="Deposit money to the customers bank account" finished-at="2023-01-14T14:30:08 EET" duration-ms="974" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc01_depositMoney -->
+        <test-method signature="tc02_withdrawMoney()[pri:0, instance:com.automation.xyzbank.tests.customer.Story05CustomerOperations@1704f67f]" started-at="2023-01-14T14:30:08 EET" name="tc02_withdrawMoney" description="Withdraw money from the customers bank account" finished-at="2023-01-14T14:30:09 EET" duration-ms="1048" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc02_withdrawMoney -->
+      </class> <!-- com.automation.xyzbank.tests.customer.Story05CustomerOperations -->
+      <class name="com.automation.xyzbank.tests.bankmanager.Story01AddCustomer">
+        <test-method is-config="true" signature="prepareTestSuite()[pri:0, instance:com.automation.xyzbank.tests.bankmanager.Story01AddCustomer@cb0f763]" started-at="2023-01-14T14:29:49 EET" name="prepareTestSuite" finished-at="2023-01-14T14:29:59 EET" duration-ms="9626" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- prepareTestSuite -->
+        <test-method signature="tc01_addCustomerOne()[pri:0, instance:com.automation.xyzbank.tests.bankmanager.Story01AddCustomer@cb0f763]" started-at="2023-01-14T14:29:59 EET" name="tc01_addCustomerOne" description="Add the customer by the bank manager" finished-at="2023-01-14T14:30:02 EET" duration-ms="3110" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc01_addCustomerOne -->
+        <test-method is-config="true" signature="terminateDriver()[pri:0, instance:com.automation.xyzbank.tests.bankmanager.Story01AddCustomer@cb0f763]" started-at="2023-01-14T14:30:11 EET" name="terminateDriver" finished-at="2023-01-14T14:30:11 EET" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- terminateDriver -->
+      </class> <!-- com.automation.xyzbank.tests.bankmanager.Story01AddCustomer -->
+      <class name="com.automation.xyzbank.tests.bankmanager.Story02OpenAccount">
+        <test-method signature="tc01_openBankAccount()[pri:0, instance:com.automation.xyzbank.tests.bankmanager.Story02OpenAccount@1b005a0b]" started-at="2023-01-14T14:30:03 EET" name="tc01_openBankAccount" description="Open the bank account in dollar for the created customer" finished-at="2023-01-14T14:30:04 EET" duration-ms="1700" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc01_openBankAccount -->
+      </class> <!-- com.automation.xyzbank.tests.bankmanager.Story02OpenAccount -->
+    </test> <!-- End-to-end regression tests -->
+  </suite> <!-- XYZ Bank Automated Tests -->
+</testng-results>

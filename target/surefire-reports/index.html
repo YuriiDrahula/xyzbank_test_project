@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports1.css" rel="stylesheet" id="ultra" />
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" id="retro" disabled="false"/>
+    <script type="text/javascript" src="jquery.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
+      <br/>
+      <span class="top-banner-font-1">1 suite</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" title="Collapse/expand all the suites" class="collapse-all-link">
+          <img src="collapseall.gif" class="collapse-all-icon">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" panel-name="suite-XYZ_Bank_Automated_Tests" class="navigator-link">
+              <span class="suite-name border-passed">XYZ Bank Automated Tests</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" panel-name="test-xml-XYZ_Bank_Automated_Tests" class="navigator-link ">
+                    <span>C:\Users\yurii.drahula\IdeaProjects\xyzbank_test_project\src\test\java\com\automation\xyzbank\tests\regressiontest\testng.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="testlist-XYZ_Bank_Automated_Tests" class="navigator-link ">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="group-XYZ_Bank_Automated_Tests" class="navigator-link ">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="times-XYZ_Bank_Automated_Tests" class="navigator-link ">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="reporter-XYZ_Bank_Automated_Tests" class="navigator-link ">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="ignored-methods-XYZ_Bank_Automated_Tests" class="navigator-link ">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="chronological-XYZ_Bank_Automated_Tests" class="navigator-link ">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">8 methods,   8 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-XYZ_Bank_Automated_Tests" class="hide-methods passed suite-XYZ_Bank_Automated_Tests"> (hide)</a> <!-- hide-methods passed suite-XYZ_Bank_Automated_Tests -->
+                      <a href="#" panel-name="suite-XYZ_Bank_Automated_Tests" class="show-methods passed suite-XYZ_Bank_Automated_Tests"> (show)</a> <!-- show-methods passed suite-XYZ_Bank_Automated_Tests -->
+                    </span>
+                    <div class="method-list-content passed suite-XYZ_Bank_Automated_Tests">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-XYZ_Bank_Automated_Tests" title="com.automation.xyzbank.tests.bankmanager.Story01AddCustomer" class="method navigator-link" hash-for-method="tc01_addCustomerOne">tc01_addCustomerOne</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-XYZ_Bank_Automated_Tests" title="com.automation.xyzbank.tests.customer.Story05CustomerOperations" class="method navigator-link" hash-for-method="tc01_depositMoney">tc01_depositMoney</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-XYZ_Bank_Automated_Tests" title="com.automation.xyzbank.tests.bankmanager.Story03FindCustomer" class="method navigator-link" hash-for-method="tc01_findCreatedCustomer">tc01_findCreatedCustomer</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-XYZ_Bank_Automated_Tests" title="com.automation.xyzbank.tests.customer.Story04LoginAsCustomer" class="method navigator-link" hash-for-method="tc01_loginAsCustomer">tc01_loginAsCustomer</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-XYZ_Bank_Automated_Tests" title="com.automation.xyzbank.tests.bankmanager.Story02OpenAccount" class="method navigator-link" hash-for-method="tc01_openBankAccount">tc01_openBankAccount</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-XYZ_Bank_Automated_Tests" title="com.automation.xyzbank.tests.customer.Story06TransactionsTable" class="method navigator-link" hash-for-method="tc01_verifyDepositTransaction">tc01_verifyDepositTransaction</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-XYZ_Bank_Automated_Tests" title="com.automation.xyzbank.tests.customer.Story06TransactionsTable" class="method navigator-link" hash-for-method="tc02_resetBalance">tc02_resetBalance</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-XYZ_Bank_Automated_Tests" title="com.automation.xyzbank.tests.customer.Story05CustomerOperations" class="method navigator-link" hash-for-method="tc02_withdrawMoney">tc02_withdrawMoney</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-XYZ_Bank_Automated_Tests -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-XYZ_Bank_Automated_Tests" class="panel XYZ_Bank_Automated_Tests">
+          <div class="suite-XYZ_Bank_Automated_Tests-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.automation.xyzbank.tests.customer.Story04LoginAsCustomer</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="tc01_loginAsCustomer">
+                  </a> <!-- tc01_loginAsCustomer -->
+                  <span class="method-name">tc01_loginAsCustomer</span>
+                  <em>
+(Login as customer with the created customer credentials)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-XYZ_Bank_Automated_Tests-class-passed -->
+          <div class="suite-XYZ_Bank_Automated_Tests-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.automation.xyzbank.tests.bankmanager.Story01AddCustomer</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="tc01_addCustomerOne">
+                  </a> <!-- tc01_addCustomerOne -->
+                  <span class="method-name">tc01_addCustomerOne</span>
+                  <em>
+(Add the customer by the bank manager)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-XYZ_Bank_Automated_Tests-class-passed -->
+          <div class="suite-XYZ_Bank_Automated_Tests-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.automation.xyzbank.tests.customer.Story06TransactionsTable</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="tc01_verifyDepositTransaction">
+                  </a> <!-- tc01_verifyDepositTransaction -->
+                  <span class="method-name">tc01_verifyDepositTransaction</span>
+                  <em>
+(Verify that the transaction from the previous tests exists in the 'Transactions' table)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="tc02_resetBalance">
+                  </a> <!-- tc02_resetBalance -->
+                  <span class="method-name">tc02_resetBalance</span>
+                  <em>
+(Verify that after clicking the 'Reset' button the balance = 0)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-XYZ_Bank_Automated_Tests-class-passed -->
+          <div class="suite-XYZ_Bank_Automated_Tests-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.automation.xyzbank.tests.bankmanager.Story02OpenAccount</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="tc01_openBankAccount">
+                  </a> <!-- tc01_openBankAccount -->
+                  <span class="method-name">tc01_openBankAccount</span>
+                  <em>
+(Open the bank account in dollar for the created customer)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-XYZ_Bank_Automated_Tests-class-passed -->
+          <div class="suite-XYZ_Bank_Automated_Tests-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.automation.xyzbank.tests.bankmanager.Story03FindCustomer</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="tc01_findCreatedCustomer">
+                  </a> <!-- tc01_findCreatedCustomer -->
+                  <span class="method-name">tc01_findCreatedCustomer</span>
+                  <em>
+(Verify that new customer was created by finding him in the 'Customers' table)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-XYZ_Bank_Automated_Tests-class-passed -->
+          <div class="suite-XYZ_Bank_Automated_Tests-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.automation.xyzbank.tests.customer.Story05CustomerOperations</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="tc01_depositMoney">
+                  </a> <!-- tc01_depositMoney -->
+                  <span class="method-name">tc01_depositMoney</span>
+                  <em>
+(Deposit money to the customers bank account)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="tc02_withdrawMoney">
+                  </a> <!-- tc02_withdrawMoney -->
+                  <span class="method-name">tc02_withdrawMoney</span>
+                  <em>
+(Withdraw money from the customers bank account)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-XYZ_Bank_Automated_Tests-class-passed -->
+        </div> <!-- panel XYZ_Bank_Automated_Tests -->
+        <div panel-name="test-xml-XYZ_Bank_Automated_Tests" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">C:\Users\yurii.drahula\IdeaProjects\xyzbank_test_project\src\test\java\com\automation\xyzbank\tests\regressiontest\testng.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite name=&quot;XYZ Bank Automated Tests&quot; guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;0&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;End-to-end regression tests&quot; verbose=&quot;0&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.automation.xyzbank.tests.bankmanager.Story01AddCustomer&quot;/&gt;
+      &lt;class name=&quot;com.automation.xyzbank.tests.bankmanager.Story02OpenAccount&quot;/&gt;
+      &lt;class name=&quot;com.automation.xyzbank.tests.bankmanager.Story03FindCustomer&quot;/&gt;
+      &lt;class name=&quot;com.automation.xyzbank.tests.customer.Story04LoginAsCustomer&quot;/&gt;
+      &lt;class name=&quot;com.automation.xyzbank.tests.customer.Story05CustomerOperations&quot;/&gt;
+      &lt;class name=&quot;com.automation.xyzbank.tests.customer.Story06TransactionsTable&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- End-to-end regression tests --&gt;
+&lt;/suite&gt; &lt;!-- XYZ Bank Automated Tests --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-XYZ_Bank_Automated_Tests" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for XYZ Bank Automated Tests</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">End-to-end regression tests (6 classes)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-XYZ_Bank_Automated_Tests" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for XYZ Bank Automated Tests</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-XYZ_Bank_Automated_Tests" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for XYZ Bank Automated Tests</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_XYZ_Bank_Automated_Tests');
+function tableData_XYZ_Bank_Automated_Tests() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(8);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'tc01_addCustomerOne')
+data.setCell(0, 2, 'com.automation.xyzbank.tests.bankmanager.Story01AddCustomer')
+data.setCell(0, 3, 3110);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'tc01_loginAsCustomer')
+data.setCell(1, 2, 'com.automation.xyzbank.tests.customer.Story04LoginAsCustomer')
+data.setCell(1, 3, 1769);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'tc01_openBankAccount')
+data.setCell(2, 2, 'com.automation.xyzbank.tests.bankmanager.Story02OpenAccount')
+data.setCell(2, 3, 1700);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'tc01_findCreatedCustomer')
+data.setCell(3, 2, 'com.automation.xyzbank.tests.bankmanager.Story03FindCustomer')
+data.setCell(3, 3, 1159);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'tc02_withdrawMoney')
+data.setCell(4, 2, 'com.automation.xyzbank.tests.customer.Story05CustomerOperations')
+data.setCell(4, 3, 1048);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'tc01_depositMoney')
+data.setCell(5, 2, 'com.automation.xyzbank.tests.customer.Story05CustomerOperations')
+data.setCell(5, 3, 974);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'tc01_verifyDepositTransaction')
+data.setCell(6, 2, 'com.automation.xyzbank.tests.customer.Story06TransactionsTable')
+data.setCell(6, 3, 740);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'tc02_resetBalance')
+data.setCell(7, 2, 'com.automation.xyzbank.tests.customer.Story06TransactionsTable')
+data.setCell(7, 3, 254);
+window.suiteTableData['XYZ_Bank_Automated_Tests']= { tableData: data, tableDiv: 'times-div-XYZ_Bank_Automated_Tests'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 10 seconds</span>
+              <div id="times-div-XYZ_Bank_Automated_Tests">
+              </div> <!-- times-div-XYZ_Bank_Automated_Tests -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-XYZ_Bank_Automated_Tests" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for XYZ Bank Automated Tests</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-XYZ_Bank_Automated_Tests" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">10 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.automation.xyzbank.tests.customer.Story04LoginAsCustomer</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">terminateDriver</span>
+                <br/>
+                <span class="ignored-method-name">prepareTestSuite</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.automation.xyzbank.tests.customer.Story06TransactionsTable</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">terminateDriver</span>
+                <br/>
+                <span class="ignored-method-name">prepareTestSuite</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.automation.xyzbank.tests.bankmanager.Story02OpenAccount</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">terminateDriver</span>
+                <br/>
+                <span class="ignored-method-name">prepareTestSuite</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.automation.xyzbank.tests.bankmanager.Story03FindCustomer</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">terminateDriver</span>
+                <br/>
+                <span class="ignored-method-name">prepareTestSuite</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.automation.xyzbank.tests.customer.Story05CustomerOperations</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">terminateDriver</span>
+                <br/>
+                <span class="ignored-method-name">prepareTestSuite</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-XYZ_Bank_Automated_Tests" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.automation.xyzbank.tests.bankmanager.Story01AddCustomer</div> <!-- chronological-class-name -->
+              <div class="configuration-suite before">
+                <span class="method-name">prepareTestSuite</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-suite before -->
+              <div class="test-method">
+                <span class="method-name">tc01_addCustomerOne</span>
+                <span class="method-start">9731 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.automation.xyzbank.tests.bankmanager.Story02OpenAccount</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">tc01_openBankAccount</span>
+                <span class="method-start">13269 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.automation.xyzbank.tests.bankmanager.Story03FindCustomer</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">tc01_findCreatedCustomer</span>
+                <span class="method-start">15026 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.automation.xyzbank.tests.customer.Story04LoginAsCustomer</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">tc01_loginAsCustomer</span>
+                <span class="method-start">16188 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.automation.xyzbank.tests.customer.Story05CustomerOperations</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">tc01_depositMoney</span>
+                <span class="method-start">17960 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">tc02_withdrawMoney</span>
+                <span class="method-start">18936 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.automation.xyzbank.tests.customer.Story06TransactionsTable</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">tc01_verifyDepositTransaction</span>
+                <span class="method-start">19986 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">tc02_resetBalance</span>
+                <span class="method-start">20728 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.automation.xyzbank.tests.bankmanager.Story01AddCustomer</div> <!-- chronological-class-name -->
+              <div class="configuration-suite after">
+                <span class="method-name">terminateDriver</span>
+                <span class="method-start">21044 ms</span>
+              </div> <!-- configuration-suite after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+<script type="text/javascript" src="testng-reports2.js"></script>
+</html>

@@ -28,6 +28,7 @@ public class Manager {
     private ChromeOptions chromeOptions;
     public WebDriver driver;
     private String pathToGlobalVariables = "src\\main\\resources\\globalvariables.properties";
+    private String pathToGlobalVariablesRemote = "src/main/resources/globalvariables.properties";
     private String url;
     public static String firstName;
     public static String lastName;
@@ -56,7 +57,7 @@ public class Manager {
 
         logger.info("Loading global variables.");
         Properties properties = new Properties();
-        FileInputStream fileInputStream = new FileInputStream(pathToGlobalVariables);
+        FileInputStream fileInputStream = new FileInputStream(pathToGlobalVariablesRemote);
         properties.load(fileInputStream);
         url = properties.getProperty("url");
         firstName = properties.getProperty("firstName");
@@ -96,7 +97,7 @@ public class Manager {
 
     @AfterSuite
     public void terminateDriver(){
-        //driver.quit();
+        driver.quit();
         logger.info("The driver was closed.");
     }
 
