@@ -20,6 +20,7 @@ import org.testng.asserts.SoftAssert;
 
 import java.io.FileInputStream;
 import java.io.IOException;
+import java.io.InputStream;
 import java.util.Properties;
 
 @Listeners(com.automation.framework.xyzbank.tools.Listeners.class)
@@ -28,7 +29,8 @@ public class Manager {
     private ChromeOptions chromeOptions;
     public WebDriver driver;
     private String pathToGlobalVariables = "src\\main\\resources\\globalvariables.properties";
-    private String pathToGlobalVariablesRemote = "src/main/resources/globalvariables.properties";
+    private InputStream pathToGlobalVariablesRemote = getClass().getResourceAsStream("globalvariables.properties");
+
     private String url;
     public static String firstName;
     public static String lastName;
