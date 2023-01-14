@@ -9,9 +9,9 @@ public class Story01AddCustomer extends Manager {
     public void tc01_addCustomerOne(){
         homePage.clickBankManagerLoginButton();
         bankManagerPage.clickAddCustomerButton();
-        addCustomerPage.enterFirstName(firstName);
-        addCustomerPage.enterLastName(lastName);
-        addCustomerPage.enterPostCode(postCode);
+        addCustomerPage.enterFirstName("John");
+        addCustomerPage.enterLastName("Doe");
+        addCustomerPage.enterPostCode("12345");
         addCustomerPage.clickAddCustomerButton();
         addCustomerPage.verifyCustomerAddition();
         addCustomerPage.acceptAlert();
