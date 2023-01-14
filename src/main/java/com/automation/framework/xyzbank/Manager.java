@@ -28,7 +28,6 @@ public class Manager {
     private ChromeOptions chromeOptions;
     public WebDriver driver;
     private String pathToGlobalVariables = "src\\main\\resources\\globalvariables.properties";
-    private String remotePathToGlobalVariables = "https://github.com/YuriiDrahula/xyzbank_test_project/blob/d4f7246017c078a918f52d84880184fb077f579a/src/main/resources/globalvariables.properties";
     private String url;
     public static String firstName;
     public static String lastName;
@@ -57,7 +56,7 @@ public class Manager {
 
         logger.info("Loading global variables.");
         Properties properties = new Properties();
-        FileInputStream fileInputStream = new FileInputStream(remotePathToGlobalVariables);
+        FileInputStream fileInputStream = new FileInputStream(pathToGlobalVariables);
         properties.load(fileInputStream);
         url = properties.getProperty("url");
         firstName = properties.getProperty("firstName");
