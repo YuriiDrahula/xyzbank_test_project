@@ -29,7 +29,7 @@ public class Manager {
     private ChromeOptions chromeOptions;
     public WebDriver driver;
     private String pathToGlobalVariables = "src\\main\\resources\\globalvariables.properties";
-    private InputStream pathToGlobalVariablesRemote = getClass().getResourceAsStream("report/globalvariables.properties");
+    private InputStream pathToGlobalVariablesRemote = getClass().getResourceAsStream("globalvariables.properties");
 
     private String url;
     public static String firstName;
