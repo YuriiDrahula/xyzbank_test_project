@@ -13,6 +13,9 @@ public class Elements {
     @FindBy(css = "td[class='ng-binding']")
     public WebElement tableRow;
 
+    @FindBy(css = "button[ng-click='deleteCust(cust)']")
+    public WebElement deleteCustomerButton;
+
     public Elements(WebDriver driver){
         PageFactory.initElements(driver, this);
     }

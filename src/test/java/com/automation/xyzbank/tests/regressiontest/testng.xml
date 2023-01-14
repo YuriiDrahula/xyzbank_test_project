@@ -9,6 +9,8 @@
             <class name="com.automation.xyzbank.tests.customer.Story04LoginAsCustomer"/>
             <class name="com.automation.xyzbank.tests.customer.Story05CustomerOperations"/>
             <class name="com.automation.xyzbank.tests.customer.Story06TransactionsTable" />
+            <class name="com.automation.xyzbank.tests.customer.Story07LogoutAsCustomer" />
+            <class name="com.automation.xyzbank.tests.bankmanager.Story08DeleteCreatedCustomer"/>
         </classes>
     </test>
 

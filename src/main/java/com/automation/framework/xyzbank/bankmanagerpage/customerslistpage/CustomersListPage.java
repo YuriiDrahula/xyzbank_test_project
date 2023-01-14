@@ -32,6 +32,10 @@ public class CustomersListPage {
         logger.debug(searchedInput + " is searched.");
     }
 
+    public void clickDeleteCustomerButton(){
+        adjustedInteractions.click(elements.deleteCustomerButton);
+    }
+
     public void verifyNewCustomerExistsInTable(String searchedElement){
         logger.debug("Entered verifyNewCustomerExistsInTable method.");
         adjustedInteractions.wait(elements.tableRow);
@@ -46,6 +50,17 @@ public class CustomersListPage {
                     softAssert.fail(searchedElement + " wasn't found in the table.");}
             }
             loopNumber++;
+        }
+        softAssert.assertAll();
+    }
+
+    public void verifyDeletedCustomerDoesntExistInTable(String customersName){
+        logger.debug("Entered verifyNewCustomerExistsInTable method.");
+        List<WebElement> table = driver.findElements(By.cssSelector("td[class='ng-binding']"));
+        if(table.size() == 0){
+            softAssert.assertTrue(true);
+        } else {
+            softAssert.fail(customersName + " still can be found in the table!");
         }
         softAssert.assertAll();
     }

@@ -1,0 +1,84 @@
+[INFO ] 2023-01-14 22:10:17.395 [main] Story01AddCustomer - Logging started.
+[INFO ] 2023-01-14 22:10:17.400 [main] Story01AddCustomer - Loading global variables.
+[INFO ] 2023-01-14 22:10:17.401 [main] Story01AddCustomer - Global variables loaded.
+[INFO ] 2023-01-14 22:10:17.401 [main] Story01AddCustomer - Initializing Web Driver.
+[INFO ] 2023-01-14 22:10:22.427 [main] Story01AddCustomer - Chrome driver initialized.
+[INFO ] 2023-01-14 22:10:22.428 [main] Story01AddCustomer - Opening tested site https://www.globalsqa.com/angularJs-protractor/BankingProject/#/login
+[INFO ] 2023-01-14 22:10:23.496 [main] Story01AddCustomer - https://www.globalsqa.com/angularJs-protractor/BankingProject/#/login has been opened.
+[DEBUG] 2023-01-14 22:10:23.497 [main] Story01AddCustomer - Initializing variables of web pages.
+[DEBUG] 2023-01-14 22:10:23.618 [main] Story01AddCustomer - Variables of web pages initialized.
+[DEBUG] 2023-01-14 22:10:23.767 [main] HomePage - Entered clickBankManagerLoginButton method
+[DEBUG] 2023-01-14 22:10:24.411 [main] HomePage - Clicked the 'Bank Manager Login' button.
+[DEBUG] 2023-01-14 22:10:24.411 [main] BankManagerPage - Entered clickAddCustomerButton method.
+[DEBUG] 2023-01-14 22:10:25.011 [main] BankManagerPage - Clicked the 'Add Customer' button.
+[DEBUG] 2023-01-14 22:10:25.011 [main] AddCustomerPage - Entered enterFirstName method.
+[DEBUG] 2023-01-14 22:10:25.708 [main] AddCustomerPage - Filled the 'Fist Name' input field with - John
+[DEBUG] 2023-01-14 22:10:25.709 [main] AddCustomerPage - Entered enterLastName method.
+[DEBUG] 2023-01-14 22:10:25.845 [main] AddCustomerPage - Filled the 'Last Name' input field with - Doe
+[DEBUG] 2023-01-14 22:10:25.845 [main] AddCustomerPage - Entered enterPostCode method.
+[DEBUG] 2023-01-14 22:10:25.962 [main] AddCustomerPage - Filled the 'Post Code' input field with - 12345
+[DEBUG] 2023-01-14 22:10:25.963 [main] AddCustomerPage - Entered clickAddCustomerButton method.
+[DEBUG] 2023-01-14 22:10:26.061 [main] AddCustomerPage - Clicked the 'Add Customer' button.
+[DEBUG] 2023-01-14 22:10:26.061 [main] AddCustomerPage - Entered verifyCustomerAddition method.
+[DEBUG] 2023-01-14 22:10:26.288 [main] BankManagerPage - Entered clickOpenAccountButton method.
+[DEBUG] 2023-01-14 22:10:26.376 [main] BankManagerPage - Clicked the 'Open Account' button.
+[DEBUG] 2023-01-14 22:10:27.004 [main] OpenAccountPage - Clicked the 'Customer' dropdown.
+[DEBUG] 2023-01-14 22:10:27.145 [main] AdjustedInteractions - Found the element - John Doe
+[DEBUG] 2023-01-14 22:10:27.177 [main] AdjustedInteractions - Clicked the element - John Doe
+[DEBUG] 2023-01-14 22:10:27.277 [main] OpenAccountPage - Clicked the 'Currency' dropdown.
+[DEBUG] 2023-01-14 22:10:27.344 [main] AdjustedInteractions - Found the element - Dollar
+[DEBUG] 2023-01-14 22:10:27.387 [main] AdjustedInteractions - Clicked the element - Dollar
+[DEBUG] 2023-01-14 22:10:27.473 [main] OpenAccountPage - Clicked the 'Process' button.
+[DEBUG] 2023-01-14 22:10:27.474 [main] OpenAccountPage - Entered verifyAccountCreation method
+[DEBUG] 2023-01-14 22:10:27.487 [main] OpenAccountPage - JS alert accepted.
+[DEBUG] 2023-01-14 22:10:27.513 [main] BankManagerPage - Entered clickCustomersButton method.
+[DEBUG] 2023-01-14 22:10:27.593 [main] BankManagerPage - Clicked the 'Customer' button.
+[DEBUG] 2023-01-14 22:10:27.594 [main] CustomersListPage - Entered searchInput method.
+[DEBUG] 2023-01-14 22:10:28.235 [main] CustomersListPage - John is searched.
+[DEBUG] 2023-01-14 22:10:28.236 [main] CustomersListPage - Entered verifyNewCustomerExistsInTable method.
+[DEBUG] 2023-01-14 22:10:28.319 [main] CustomersListPage - Doe was found in the table.
+[DEBUG] 2023-01-14 22:10:28.319 [main] HomePage - Entered clickHomeButton method
+[DEBUG] 2023-01-14 22:10:28.417 [main] HomePage - Clicked the 'Home' button.
+[DEBUG] 2023-01-14 22:10:28.428 [main] HomePage - Entered clickCustomerLoginButton method
+[DEBUG] 2023-01-14 22:10:28.533 [main] HomePage - Clicked the 'Customer Login' button.
+[DEBUG] 2023-01-14 22:10:28.533 [main] CustomerLoginPage - Entered selectUserToLogin method.
+[DEBUG] 2023-01-14 22:10:29.126 [main] CustomerLoginPage - Clicked the 'Your Name' dropdown.
+[DEBUG] 2023-01-14 22:10:29.244 [main] AdjustedInteractions - Found the element - John Doe
+[DEBUG] 2023-01-14 22:10:29.284 [main] AdjustedInteractions - Clicked the element - John Doe
+[DEBUG] 2023-01-14 22:10:29.284 [main] CustomerLoginPage - Entered clickLoginButton method.
+[DEBUG] 2023-01-14 22:10:29.352 [main] CustomerLoginPage - Clicked the 'Login' button.
+[DEBUG] 2023-01-14 22:10:29.352 [main] CustomerMainPage - Entered verifyCorrectCustomerLoggedIn method.
+[DEBUG] 2023-01-14 22:10:29.964 [main] CustomerMainPage - Entered depositMoney method.
+[DEBUG] 2023-01-14 22:10:30.028 [main] CustomerMainPage - Clicked the 'Deposit' button.
+[DEBUG] 2023-01-14 22:10:30.660 [main] CustomerMainPage - Filled the 'Deposit' input field with amount of - 1000
+[DEBUG] 2023-01-14 22:10:30.754 [main] CustomerMainPage - Clicked the 'Confirm Deposit' button.
+[DEBUG] 2023-01-14 22:10:30.754 [main] CustomerMainPage - Entered verifyDepositSuccessfullyMessageIsShown method.
+[DEBUG] 2023-01-14 22:10:30.808 [main] CustomerMainPage - Entered verifyCorrectBalanceAmount method.
+[DEBUG] 2023-01-14 22:10:30.881 [main] CustomerMainPage - Entered withdrawMoney method.
+[DEBUG] 2023-01-14 22:10:30.950 [main] CustomerMainPage - Clicked the 'Withdraw' button.
+[DEBUG] 2023-01-14 22:10:31.562 [main] CustomerMainPage - Filled the 'Withdraw' input field with amount of - 500
+[DEBUG] 2023-01-14 22:10:31.637 [main] CustomerMainPage - Clicked the 'Confirm Withdraw' button.
+[DEBUG] 2023-01-14 22:10:31.637 [main] CustomerMainPage - Entered verifyTransactionSuccessfulMessageIsShown method.
+[DEBUG] 2023-01-14 22:10:31.687 [main] CustomerMainPage - Entered verifyCorrectBalanceAmount method.
+[DEBUG] 2023-01-14 22:10:31.753 [main] CustomerMainPage - Entered clickTransactionsButton method.
+[DEBUG] 2023-01-14 22:10:31.829 [main] CustomerMainPage - Clicked the 'Transactions' button.
+[DEBUG] 2023-01-14 22:10:31.829 [main] TransactionsPage - Entered verifyTransactionAmount method.
+[DEBUG] 2023-01-14 22:10:32.403 [main] TransactionsPage - Entered verifyTransactionType method.
+[DEBUG] 2023-01-14 22:10:32.457 [main] TransactionsPage - Entered clickResetButton method.
+[DEBUG] 2023-01-14 22:10:32.533 [main] TransactionsPage - Clicked the 'Reset' button.
+[DEBUG] 2023-01-14 22:10:32.534 [main] TransactionsPage - Entered clickBackButton method.
+[DEBUG] 2023-01-14 22:10:32.606 [main] TransactionsPage - Clicked the 'Back' button.
+[DEBUG] 2023-01-14 22:10:32.606 [main] CustomerMainPage - Entered verifyCorrectBalanceAmount method.
+[DEBUG] 2023-01-14 22:10:32.669 [main] CustomerMainPage - Entered clickLogoutButton method.
+[DEBUG] 2023-01-14 22:10:32.738 [main] CustomerMainPage - Clicked the 'Logout' button.
+[DEBUG] 2023-01-14 22:10:32.738 [main] CustomerLoginPage - Entered verifyUserIsLocatedOnLoginPage method.
+[DEBUG] 2023-01-14 22:10:32.744 [main] HomePage - Entered clickHomeButton method
+[DEBUG] 2023-01-14 22:10:32.801 [main] HomePage - Clicked the 'Home' button.
+[DEBUG] 2023-01-14 22:10:32.805 [main] HomePage - Entered clickBankManagerLoginButton method
+[DEBUG] 2023-01-14 22:10:32.872 [main] HomePage - Clicked the 'Bank Manager Login' button.
+[DEBUG] 2023-01-14 22:10:32.872 [main] BankManagerPage - Entered clickCustomersButton method.
+[DEBUG] 2023-01-14 22:10:32.943 [main] BankManagerPage - Clicked the 'Customer' button.
+[DEBUG] 2023-01-14 22:10:32.943 [main] CustomersListPage - Entered searchInput method.
+[DEBUG] 2023-01-14 22:10:33.058 [main] CustomersListPage - Doe is searched.
+[DEBUG] 2023-01-14 22:10:33.163 [main] CustomersListPage - Entered verifyNewCustomerExistsInTable method.
+[INFO ] 2023-01-14 22:10:33.409 [main] Story01AddCustomer - The driver was closed.
