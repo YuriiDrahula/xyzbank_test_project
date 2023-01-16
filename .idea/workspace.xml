@@ -7,15 +7,17 @@
     <list default="true" id="d7f0535a-4d3e-4805-96bb-2ab7f689d785" name="Changes" comment="global properties path">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/automation/framework/xyzbank/Manager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/automation/framework/xyzbank/Manager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/automation/framework/xyzbank/bankmanagerpage/BankManagerPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/automation/framework/xyzbank/bankmanagerpage/BankManagerPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/automation/framework/xyzbank/bankmanagerpage/addcustomerpage/AddCustomerPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/automation/framework/xyzbank/bankmanagerpage/addcustomerpage/AddCustomerPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/automation/framework/xyzbank/bankmanagerpage/customerslistpage/CustomersListPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/automation/framework/xyzbank/bankmanagerpage/customerslistpage/CustomersListPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/automation/framework/xyzbank/customerpages/loginpage/CustomerLoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/automation/framework/xyzbank/customerpages/loginpage/CustomerLoginPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/automation/framework/xyzbank/customerpages/mainpage/CustomerMainPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/automation/framework/xyzbank/customerpages/mainpage/CustomerMainPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/automation/framework/xyzbank/customerpages/mainpage/transactionspage/TransactionsPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/automation/framework/xyzbank/customerpages/mainpage/transactionspage/TransactionsPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/automation/framework/xyzbank/homepage/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/automation/framework/xyzbank/homepage/HomePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/automation/framework/xyzbank/bankmanagerpage/openaccountpage/OpenAccountPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/automation/framework/xyzbank/bankmanagerpage/openaccountpage/OpenAccountPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/automation/xyzbank/tests/bankmanager/Story01AddCustomer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/automation/xyzbank/tests/bankmanager/Story01AddCustomer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/automation/xyzbank/tests/bankmanager/Story02OpenAccount.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/automation/xyzbank/tests/bankmanager/Story02OpenAccount.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/automation/xyzbank/tests/bankmanager/Story03FindCustomer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/automation/xyzbank/tests/bankmanager/Story03FindCustomer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/automation/xyzbank/tests/bankmanager/Story08DeleteCreatedCustomer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/automation/xyzbank/tests/bankmanager/Story08DeleteCreatedCustomer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/automation/xyzbank/tests/customer/Story04LoginAsCustomer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/automation/xyzbank/tests/customer/Story04LoginAsCustomer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/automation/xyzbank/tests/customer/Story05CustomerOperations.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/automation/xyzbank/tests/customer/Story05CustomerOperations.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/automation/xyzbank/tests/customer/Story06TransactionsTable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/automation/xyzbank/tests/customer/Story06TransactionsTable.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/automation/xyzbank/tests/customer/Story07LogoutAsCustomer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/automation/xyzbank/tests/customer/Story07LogoutAsCustomer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/automation/framework/xyzbank/Manager.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/automation/framework/xyzbank/Manager.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/automation/framework/xyzbank/bankmanagerpage/BankManagerPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/automation/framework/xyzbank/bankmanagerpage/BankManagerPage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/automation/xyzbank/tests/bankmanager/Story01AddCustomer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/automation/xyzbank/tests/bankmanager/Story01AddCustomer.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/xyzbank_test_project.iml" beforeDir="false" afterPath="$PROJECT_DIR$/xyzbank_test_project.iml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -158,9 +160,9 @@
     <recent_temporary>
       <list>
         <item itemvalue="TestNG.C:/Users/yurii.drahula/IdeaProjects/xyzbank_test_project/src/test/java/com/automation/xyzbank/tests/regressiontest/testng.xml" />
+        <item itemvalue="TestNG.Story01AddCustomer.tc01_addCustomerOne" />
         <item itemvalue="TestNG.Story05CustomerOperations" />
         <item itemvalue="TestNG.Story04LoginAsCustomer.tc01_loginAsCustomer" />
-        <item itemvalue="TestNG.Story01AddCustomer.tc01_addCustomerOne" />
         <item itemvalue="TestNG.Story05CustomerOperations.tc01_depositMoney" />
       </list>
     </recent_temporary>

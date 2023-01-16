@@ -50,7 +50,7 @@ public class Manager {
     public static TransactionsPage transactionsPage;
     public Logger logger;
 
-    @BeforeSuite
+    @BeforeSuite(description = "Load global variables, initiate WebDriver and site pages")
     public void prepareTestSuite() throws IOException {
         logger = LogManager.getLogger(getClass());
         logger.info("Logging started.");
