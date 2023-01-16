@@ -57,7 +57,7 @@ public class Manager {
 
         logger.info("Loading global variables.");
         Properties properties = new Properties();
-        FileInputStream fileInputStream = new FileInputStream(remotePathToGlobalVariables);
+        FileInputStream fileInputStream = new FileInputStream(pathToGlobalVariables);
         properties.load(fileInputStream);
         url = properties.getProperty("url");
         firstName = properties.getProperty("firstName");

@@ -6,6 +6,17 @@
   <component name="ChangeListManager">
     <list default="true" id="d7f0535a-4d3e-4805-96bb-2ab7f689d785" name="Changes" comment="global properties path">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/automation/framework/xyzbank/Manager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/automation/framework/xyzbank/Manager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/automation/framework/xyzbank/bankmanagerpage/BankManagerPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/automation/framework/xyzbank/bankmanagerpage/BankManagerPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/automation/framework/xyzbank/bankmanagerpage/addcustomerpage/AddCustomerPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/automation/framework/xyzbank/bankmanagerpage/addcustomerpage/AddCustomerPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/automation/framework/xyzbank/bankmanagerpage/customerslistpage/CustomersListPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/automation/framework/xyzbank/bankmanagerpage/customerslistpage/CustomersListPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/automation/framework/xyzbank/customerpages/loginpage/CustomerLoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/automation/framework/xyzbank/customerpages/loginpage/CustomerLoginPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/automation/framework/xyzbank/customerpages/mainpage/CustomerMainPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/automation/framework/xyzbank/customerpages/mainpage/CustomerMainPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/automation/framework/xyzbank/customerpages/mainpage/transactionspage/TransactionsPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/automation/framework/xyzbank/customerpages/mainpage/transactionspage/TransactionsPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/automation/framework/xyzbank/homepage/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/automation/framework/xyzbank/homepage/HomePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/automation/framework/xyzbank/Manager.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/automation/framework/xyzbank/Manager.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/automation/framework/xyzbank/bankmanagerpage/BankManagerPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/automation/framework/xyzbank/bankmanagerpage/BankManagerPage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xyzbank_test_project.iml" beforeDir="false" afterPath="$PROJECT_DIR$/xyzbank_test_project.iml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

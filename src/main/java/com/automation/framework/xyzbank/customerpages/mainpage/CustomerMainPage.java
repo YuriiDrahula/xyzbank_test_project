@@ -1,6 +1,7 @@
 package com.automation.framework.xyzbank.customerpages.mainpage;
 
 import com.automation.framework.xyzbank.tools.AdjustedInteractions;
+import io.qameta.allure.Step;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.WebDriver;
@@ -22,12 +23,14 @@ public class CustomerMainPage {
         this.logger = LogManager.getLogger(getClass());
     }
 
+    @Step("Click the 'Transactions' button")
     public void clickTransactionsButton(){
         logger.debug("Entered clickTransactionsButton method.");
         adjustedInteractions.click(elements.transactionsButton);
         logger.debug("Clicked the 'Transactions' button.");
     }
 
+    @Step("Click the 'Logout' button")
     public void clickLogoutButton(){
         logger.debug("Entered clickLogoutButton method.");
         adjustedInteractions.click(elements.logoutButton);
@@ -43,7 +46,7 @@ public class CustomerMainPage {
         adjustedInteractions.wait(elements.accountBalance);
         return elements.accountBalance.getText();
     }
-
+    @Step("Verify that the chosen in dropdown customer logged in")
     public void verifyCorrectCustomerLoggedIn(String fullName){
         logger.debug("Entered verifyCorrectCustomerLoggedIn method.");
         softAssert.assertEquals(getCustomerName(), fullName,
@@ -51,6 +54,7 @@ public class CustomerMainPage {
         softAssert.assertAll();
     }
 
+    @Step("Deposit money to the customers bank account")
     public void depositMoney(String amountToDeposit){
         logger.debug("Entered depositMoney method.");
         adjustedInteractions.click(elements.depositButton);
@@ -61,6 +65,7 @@ public class CustomerMainPage {
         logger.debug("Clicked the 'Confirm Deposit' button.");
     }
 
+    @Step("Withdraw money from the customers bank account")
     public void withdrawMoney(String amountToWithdraw){
         logger.debug("Entered withdrawMoney method.");
         adjustedInteractions.click(elements.withdrawButton);
@@ -76,6 +81,7 @@ public class CustomerMainPage {
         return elements.successMessage.getText();
     }
 
+    @Step("Verify that the 'Deposit Successful' message is shown after making a deposit")
     public void verifyDepositSuccessfullyMessageIsShown(){
         logger.debug("Entered verifyDepositSuccessfullyMessageIsShown method.");
         softAssert.assertTrue(getSuccessMessage().equals("Deposit Successful"),
@@ -83,12 +89,14 @@ public class CustomerMainPage {
         softAssert.assertAll();
     }
 
+    @Step("Verify that the 'Transaction successful' message is shown after withdrawing money")
     public void verifyTransactionSuccessfulMessageIsShown(){
         logger.debug("Entered verifyTransactionSuccessfulMessageIsShown method.");
         softAssert.assertTrue(getSuccessMessage().equals("Transaction successful"),
                 "The 'Transaction successful' message isn't shown.");
         softAssert.assertAll();
     }
+    @Step("Verify that the customers account balance is equal to the expected")
     public void verifyCorrectBalanceAmount(String expectedBalance){
         logger.debug("Entered verifyCorrectBalanceAmount method.");
         adjustedInteractions.wait(elements.accountBalance);
