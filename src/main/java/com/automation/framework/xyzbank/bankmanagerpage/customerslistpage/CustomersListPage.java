@@ -1,6 +1,7 @@
 package com.automation.framework.xyzbank.bankmanagerpage.customerslistpage;
 
 import com.automation.framework.xyzbank.tools.AdjustedInteractions;
+import io.qameta.allure.Step;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.By;
@@ -26,16 +27,19 @@ public class CustomersListPage {
         this.logger = LogManager.getLogger(getClass());
     }
 
+    @Step("Search for the newly created customer")
     public void searchInput(String searchedInput){
         logger.debug("Entered searchInput method.");
         adjustedInteractions.sendKeys(elements.searchInputField, searchedInput);
         logger.debug(searchedInput + " is searched.");
     }
 
+    @Step("Click the 'Delete' button for deleting the customer")
     public void clickDeleteCustomerButton(){
         adjustedInteractions.click(elements.deleteCustomerButton);
     }
 
+    @Step("Verify that newly created customer is added to the 'Customers' table")
     public void verifyNewCustomerExistsInTable(String searchedElement){
         logger.debug("Entered verifyNewCustomerExistsInTable method.");
         adjustedInteractions.wait(elements.tableRow);
@@ -54,6 +58,7 @@ public class CustomersListPage {
         softAssert.assertAll();
     }
 
+    @Step("Verify that deleted customer is deleted from the 'Customers' table")
     public void verifyDeletedCustomerDoesntExistInTable(String customersName){
         logger.debug("Entered verifyNewCustomerExistsInTable method.");
         List<WebElement> table = driver.findElements(By.cssSelector("td[class='ng-binding']"));

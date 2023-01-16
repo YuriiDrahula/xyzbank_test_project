@@ -2,6 +2,7 @@ package com.automation.framework.xyzbank.customerpages.loginpage;
 
 
 import com.automation.framework.xyzbank.tools.AdjustedInteractions;
+import io.qameta.allure.Step;
 import org.apache.commons.logging.Log;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -24,6 +25,7 @@ public class CustomerLoginPage {
         this.softAssert = new SoftAssert();
     }
 
+    @Step("Select created user from the dropdown")
     public void selectUserToLogin(String fullName){
         logger.debug("Entered selectUserToLogin method.");
         adjustedInteractions.click(elements.loginDropdown);
@@ -31,12 +33,14 @@ public class CustomerLoginPage {
         adjustedInteractions.selectFromDropdown("option[class='ng-binding ng-scope']", fullName);
     }
 
+    @Step("Click the 'Login' button")
     public void clickLoginButton(){
         logger.debug("Entered clickLoginButton method.");
         adjustedInteractions.click(elements.loginButton);
         logger.debug("Clicked the 'Login' button.");
     }
 
+    @Step("Verify that user is located on the 'Customer Login' page")
     public void verifyUserIsLocatedOnLoginPage(){
         logger.debug("Entered verifyUserIsLocatedOnLoginPage method.");
         softAssert.assertEquals(driver.getCurrentUrl(),
